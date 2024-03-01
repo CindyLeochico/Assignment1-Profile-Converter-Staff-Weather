@@ -1,0 +1,73 @@
+<!-- /**
+* @name: Assignement1
+* @Course Code: SODV1201
+* @class: Software Development Diploma program.
+* @author: Cindy April Leochico
+*/ -->
+
+<!-- Create a new page called weather. On this page use the concept of JavaScript named and
+anonymous function and 
+• Hint: Use JQuery to access the DOM elements in your code for this question.
+• Do a little research to find out the basic formula for each calculation. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather Page</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <!-- The navigation bar will be used to create a link to other pages that you will create for the
+    other questions. -->
+    <header id="header-main">
+        <div id="list-items">
+            <!-- This home page should be named as index.html -->
+            <a href="index.html">Home</a>
+            <a href="grade.html">Grade Converter</a>
+            <a href="staff.html">Staff</a>
+            <a href="weather.html">Weather</a>
+
+        </div>
+    </header>
+
+    <div class="container-margin-left">
+        <!-- create a program that can accept a temperature input in degree Fahrenheit -->
+        <p class="margin-left">Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+        <br>
+        <label class="margin-left" for="tempF">Temperature :</label>
+        <input id="tempF" name="tempF" type="text" placeholder="Input Fahrenheit">
+        <button onclick="toCelsius()">&nbsp&nbsp Convert to Celsius &nbsp&nbsp;</button>
+    </div>
+    <br>
+    <p id="message" class="margin-left"></p>
+    <br>
+    <hr><br>
+    <div>
+        <!-- convert it from Celsius to Kelvin based on a button click event. (20 points) -->
+        <p class="margin-left">Type a value in the Celsius field to convert the value to Kelvin:</p>
+        <br>
+        <label class="margin-left" for="tempC">Temperature :</label>
+        <input id="tempC" name="tempC" type="text" placeholder="Input Celsius">
+        <button onclick="toKelvin()">&nbsp&nbsp Convert to Kelvin &nbsp&nbsp;</button>
+    </div>
+    <br>
+    <p id="messageC" class="margin-left"></p>
+
+
+    <!-- Footer -->
+    <!-- The footer of your page should include current date and copy right information. -->
+    <!-- All your page should have a footer that details your full name, copyright @ and year. (10 points) -->
+    <footer>
+        <p class="center">Cindy April Leochico &copy; 2024 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
